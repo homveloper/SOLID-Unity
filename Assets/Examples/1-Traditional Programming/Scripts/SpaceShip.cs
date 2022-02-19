@@ -6,7 +6,6 @@ namespace Traditional
 {
     public class SpaceShip : MonoBehaviour
     {
-
         [SerializeField] private int health = 100;
         [SerializeField] private int maxHealth = 100;
 
@@ -26,7 +25,7 @@ namespace Traditional
             }
             set
             {
-                health += value;
+                health = value;
 
                 if (health <= 0)
                 {
@@ -61,6 +60,8 @@ namespace Traditional
 
             transform.position += transform.up * vertical * moveSpeed * Time.deltaTime;
             transform.Rotate(-Vector3.forward * horizontal * turnSpeed * Time.deltaTime);
+
+            thrusterParticles.SetActive(vertical > 0.5f);
         }
 
         private void FireWeapon()
@@ -78,9 +79,9 @@ namespace Traditional
 
             if (other.collider.TryGetComponent<Projectile>(out projectile))
             {
-                Debug.Log(projectile);
+                // Debug.Log(projectile);
                 TakeDamage(projectile.Damage);
-                Destroy(projectile.gameObject);
+                // Destroy(projectile.gameObject);
             }
         }
 

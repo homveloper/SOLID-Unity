@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &466569400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6501427372790103787, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
+  m_PrefabInstance: {fileID: 4633262874632020845}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &683889081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1446623136265567064, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
@@ -268,8 +273,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpaceShip
       objectReference: {fileID: 0}
+    - target: {fileID: 4815238497090541489, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5141729929699528374, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5141729929699528374, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
       propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898366949685643716, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8823207939010568447, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
@@ -288,6 +305,10 @@ PrefabInstance:
       propertyPath: projectile
       value: 
       objectReference: {fileID: 4086111722380844907, guid: cde9866772c414fe39a0fbc5fb8885c3, type: 3}
+    - target: {fileID: 8823207939010568447, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
+      propertyPath: thrusterParticles
+      value: 
+      objectReference: {fileID: 466569400}
     - target: {fileID: 8823207939010568447, guid: 34dab6edcaec840c78c550aedaa59708, type: 3}
       propertyPath: weaponMountPosition
       value: 

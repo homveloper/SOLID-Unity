@@ -6,7 +6,7 @@ namespace Traditional
 {
     public class Projectile : MonoBehaviour
     {
-        private int damage;
+        private int damage = 0;
 
         public int Damage{get{return damage;}}
     }
